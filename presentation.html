@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>IP Paris Racing Team</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logos/logofinal.png" alt="..."/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html#page-top">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cars.html">Nos Voitures</a></li>
+                        <li class="nav-item"><a class="nav-link" href="partners.html">Nos Partenaires</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Actualités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <br>
+        
+        <!-- Team-->
+        <section class="page-section" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">L'équipe</h2>
+                    <h3 class="section-subheading text-muted">Notre équipe, issue de cursus et d'écoles variées et divisée en 10 pôles</h3>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1_5"></div>
+                        <div class="col-md-3">
+                            <div class="container">
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-8">
+                                        <img src="assets/img/logos/members.png" style="width: 60%;"/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>92</h4>
+                                        Membres
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="container">
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-8">
+                                        <img src="assets/img/logos/world.png" style="width: 60%;"/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>23</h4>
+                                        Nationalités
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="container">
+                                <div class="row" style="align-items: center;">
+                                    <div class="col-md-8">
+                                        <img src="assets/img/logos/school.png" style="width: 60%;"/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4>5</h4>
+                                        Ecoles
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1_5"></div>
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="container">
+                    <div class="row text-center chart">
+                        <div class="col-md-4 chart">
+                            <canvas id="members_chart" class="chart"></canvas>
+                        </div>
+                        <div class="col-md-3 chart">
+                            <canvas id="nation_chart"></canvas>
+                        </div>
+                        <div class="col-md-4 chart">
+                            <canvas id="school_chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+                <hr style="width:50%;text-align:left;margin-left:25%;height:3px;background-color:white;opacity: 1;">
+                <br><br>
+
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Les Pôles</h2>
+                </div>
+                <br><br>
+
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/2.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">BUREAU</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/5.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">BUREAU ETENDU</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/6.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">SPONSORS</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/2.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/6.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">Responsive Design</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/5.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/3.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">Responsive Design</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/5.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/4.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">Responsive Design</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/3.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/2.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">Responsive Design</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <span class="">
+                            <div class="center-cropped" style="background-image: url(assets/img/portfolio/1.jpg);"></div>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-4 text-lg-start">
+                        IP Paris Racing Team 2022-2023<br>
+                        <a href="presentation.html">L'équipe</a><br>
+                        <a href="cars.html">Les voitures</a><br><br>
+                        <p>IP Paris Racing Team &copy; 2023</p>
+                    </div>
+
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2 socials" href="https://www.instagram.com" aria-label="Instagram"><img class="instagram" src="assets/img/logos/instagram.png"/></a>
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="contact.html">Contact</a><br>
+                        <a href="news.html">Actualités</a><br>
+                        <a href="partners.html">Partenaires</a><br>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            // Get the canvas element
+            var ch1 = document.getElementById('members_chart').getContext('2d');
+            var ch2 = document.getElementById('nation_chart').getContext('2d');
+            var ch3 = document.getElementById('school_chart').getContext('2d');
+        
+            const generateGradientColors = (numColors) => {
+                const colors = [];
+                    for (let i = 0; i < numColors; i++) {
+                        const r = 255 - i * 255/numColors; // Gradually decrease red component
+                        const g = 10 + i * 100/numColors;   // Gradually increase green component
+                        const b = 10 + i * 245/numColors;          // Constant blue component
+                        colors.push(`rgb(${r},${g},${b})`);
+                    }
+                return colors;
+            };
+
+            const gradientColors1 = generateGradientColors(11);
+
+            
+            // Define your data for the pie chart
+            var data1 = {
+                labels: ['Châssis', 'Motorisation', 'Electronique', 'Driverless', 'Aérodynamique', 'Communication', 'Liaison au sol', 'Sponsors', 'Batterie', 'Bureau', 'Logistique'],
+                datasets: [{
+                    data: [10, 10, 10, 10, 8, 8, 9, 6, 8, 11, 2], // Example data
+                    backgroundColor: generateGradientColors(11), // Colors for segments
+                    borderWidth: 0.5,
+                    borderColor: 'black',
+                }]
+            };
+
+            var data2 = {
+                labels: ['Master', 'Cycle Ingénieur', 'Licence / Bachelor'],
+                datasets: [{
+                    data: [50, 31, 11], // Example data
+                    backgroundColor: generateGradientColors(3), // Colors for segments
+                    borderWidth: 0.5,
+                    borderColor: 'black',
+                }]
+            };
+
+            var data3 = {
+                labels: ['Ecole Polytechnique', 'ENSTA Paris', 'Telecom Sud Paris', 'Telecom Paris', 'ENSAE'],
+                datasets: [{
+                    data: [60, 13, 9, 6, 4], // Example data
+                    backgroundColor: generateGradientColors(5), // Colors for segments
+                    borderWidth: 0.5,
+                    borderColor: 'black',
+                }]
+            };
+        
+            // Configure options for the pie chart (e.g., tooltips, legend, etc.)
+            var options1 = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: true, position: 'bottom', position: 'left', labels: { color: 'white',},} }               
+            };
+
+            var options2 = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: true, position: 'bottom', position: 'top', labels: { color: 'white',},} }               
+            };
+
+            var options3 = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: true, position: 'bottom', position: 'right', labels: {color: 'white',},} }               
+            };
+        
+            // Create the pie chart
+            var pie1 = new Chart(ch1, {
+                type: 'doughnut',
+                data: data1,
+                options: options1
+            });
+
+            var pie2 = new Chart(ch2, {
+                type: 'doughnut',
+                data: data2,
+                options: options2
+            });
+
+            var pie3 = new Chart(ch3, {
+                type: 'doughnut',
+                data: data3,
+                options: options3
+            });
+        </script>
+
+    </body>
+</html>
