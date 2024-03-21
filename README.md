@@ -3,6 +3,8 @@
 Technical
 - [ ] Embedding Linkedin and Instagram feeds on the "Actualités" page
 - [ ] Landing page button redirecting to the "Presentations"
+- [ ] Add Kvaser logo
+- [ ] Adding small texts on the side of the sponsors logos
 - [ ] Downloadable sponsors plaquette when button clicked on the "Partenaires page"
 - [ ] Correcting the navbar text for it to avoid being on two distinct lines when sliding back up onto the page
 - [ ] English version of the website possibility
