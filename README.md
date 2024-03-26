@@ -1,6 +1,6 @@
 # To-Do List
 All
-- [ ] Coloring the linkedin & instagram buttons at the bottom with adapted colors
+- [ ] Coloring the linkedin & instagram buttons at the bottom with adapted colors (WIP, Ayoub)
 - [ ] English version of the website possibility
       
 Accueil/Index
@@ -17,11 +17,12 @@ Nos voitures
 Partenaires
 - [X] Downloadable sponsors plaquette when button clicked on the "Partenaires page"
 - [ ] Prettifying the clickable button background
-- [ ] Add Kvaser logo
-- [ ] Adding small texts on the side of the sponsors logos
+- [X] Add Kvaser logo
+- [ ] Adding small texts on the side of the sponsors logos (WIP, Ayoub)
 
 Actualités
-- [ ] Embedding Linkedin and Instagram feeds on the "Actualités" page
+- [ ] Embedding Linkedin feed on the "Actualités" page (WIP, Ayoub)
+- [ ] Embedding Instragram feed on the "Actualités" page
 
 # Commit Policy
 Please, respect the following commit policy:
