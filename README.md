@@ -1,18 +1,29 @@
 # To-Do List
-
-Technical
-- [ ] Embedding Linkedin and Instagram feeds on the "Actualités" page
-- [X] Landing page button redirecting to the "Presentations"
-- [ ] Add Kvaser logo
-- [ ] Adding small texts on the side of the sponsors logos
-- [X] Downloadable sponsors plaquette when button clicked on the "Partenaires page"
-- [ ] Correcting the navbar text for it to avoid being on two distinct lines when sliding back up onto the page
+All
+- [ ] Coloring the linkedin & instagram buttons at the bottom with adapted colors (WIP, Ayoub)
 - [ ] English version of the website possibility
+      
+Accueil/Index
+- [X] Landing page button redirecting to the "Presentations"
+      
+Présentations
+- [ ] Adding pictures for the motor, aero, sponsors and communication poles
+- [ ] Centering first line at the top under "l'équipe"
 
-Design
-- [ ] Adding pictures and text to finish presentations page
-- [ ] Adding first car description in "Vehicules"
-- [ ] 
+Nos voitures
+- [ ] Describing our first car, maybe a 3D model ?
+- [ ] Finishing the timeline
+
+Partenaires
+- [X] Downloadable sponsors plaquette when button clicked on the "Partenaires page"
+- [ ] Prettifying the clickable button background
+- [X] Add Kvaser logo
+- [ ] Adding small texts on the side of the sponsors logos (WIP, Ayoub)
+
+Actualités
+- [ ] Embedding Linkedin feed on the "Actualités" page (WIP, Ayoub)
+- [ ] Embedding Instragram feed on the "Actualités" page
+
 # Commit Policy
 Please, respect the following commit policy:
 ```
