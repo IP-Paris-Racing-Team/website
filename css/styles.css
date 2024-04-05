@@ -12824,14 +12824,20 @@ header.masthead .masthead-heading {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
-
+  
+  header.masthead.masthead_temporary_fix {
+    padding-top: 10.5rem;  /* looks bad with previous style, temporary solution since fixing all styles would be too complex right now */
+    padding-bottom: 12.5rem;
+  }
+  
+  
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
-
+  
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
@@ -13060,26 +13066,26 @@ header.masthead .masthead-heading {
   .timeline:before {
     left: 50%;
   }
-
+  
   .timeline>li {
     min-height: 100px;
     margin-bottom: 100px;
   }
-
+  
   .timeline>li .timeline-panel {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
-
+  
   .timeline>li .timeline-image {
     left: 50%;
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
-
+  
   .timeline>li .timeline-image h4,
   .timeline>li .timeline-image .h4 {
     font-size: 13px;
@@ -13261,3 +13267,38 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   justify-content: center;
 }
+
+
+
+
+
+
+
+/* BEGIN SPECIFIC CODE FOR news.html BEGIN */
+.instagram-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 990px) {
+  
+  .instagram-container {
+    flex-direction: row;
+  }
+}
+.posts-title {
+  width: 40%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.linkedin-container {
+  width: 100%;
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+}
+/* END SPECIFIC CODE FOR news.html END */
