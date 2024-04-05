@@ -21,7 +21,7 @@ Partenaires
 - [ ] Adding small texts on the side of the sponsors logos (WIP, Ayoub)
 
 Actualités
-- [X] Embedding Linkedin feed on the "Actualités" page
+- [X] Embedding Linkedin feed on the "Actualités" page *(could potentially need a better solution)*
 - [X] Embedding Instragram feed on the "Actualités" page
 
 # Commit Policy
