@@ -1,6 +1,7 @@
 # To-Do List
 All
 - [ ] Coloring the linkedin & instagram buttons at the bottom with adapted colors (WIP, Ayoub)
+- [ ] The instagram and linkedin redirect to our own pages and not the generic websites
 - [ ] English version of the website possibility
       
 Accueil/Index
@@ -11,7 +12,7 @@ Présentations
 - [ ] Centering first line at the top under "l'équipe"
 
 Nos voitures
-- [ ] Describing our first car, maybe a 3D model ?
+- [ ] Cleaning up the page (Objectifs, and the Timeline needs to be sexier, maybe a visible separation (arrow ?) between present and future
 - [ ] Finishing the timeline
 
 Partenaires
