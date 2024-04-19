@@ -19,7 +19,7 @@ Partenaires
 - [X] Downloadable sponsors plaquette when button clicked on the "Partenaires page"
 - [ ] Prettifying the clickable button background
 - [X] Add Kvaser logo
-- [ ] Adding small texts on the side of the sponsors logos (WIP, Ayoub)
+- [X] Adding small texts on the side of the sponsors logos (WIP, Ayoub)
 
 Actualités
 - [X] Embedding Linkedin feed on the "Actualités" page *(could potentially need a better solution)*
