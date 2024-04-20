@@ -37,11 +37,11 @@ Actualités
 Do the pages render and behave properly on small screens ? ([x] for yes)
 
 - [x] partners.html
-- [] cars.html
-- [] contact.html
-- [] index.html
-- [] news.html
-- [] presentation.html
+- [ ] cars.html
+- [ ] contact.html
+- [ ] index.html
+- [ ] news.html
+- [ ] presentation.html
 
 # Commit Policy
 
