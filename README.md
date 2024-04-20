@@ -2,8 +2,8 @@
 
 All
 
-- [ ] Coloring the linkedin & instagram buttons at the bottom with adapted colors (WIP, Ayoub)
-- [ ] The instagram and linkedin redirect to our own pages and not the generic websites
+- [x] Coloring the linkedin & instagram buttons at the bottom with adapted colors
+- [x] The instagram and linkedin redirect to our own pages and not the generic websites
 - [ ] English version of the website possibility
 
 Accueil/Index
