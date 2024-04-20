@@ -1,0 +1,80 @@
+/* BEGIN footer code BEGIN */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom right, rgba(0, 136, 255, 0.8), rgba(0, 255, 229, 0.6));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul.social-icons {
+    position: relative;
+    display: flex;
+}
+
+ul.social-icons li {
+    position: relative;
+    list-style: none;
+}
+
+ul.social-icons li a {
+    position: relative;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    /* space between each icon */
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: #e1e1e1;
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
+    /* y-axis-px x-axis-px dispersion-px */
+    2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+ul.social-icons li a:hover {
+    color: #fff;
+    transform: translateY(-10px);
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+ul.social-icons .fab {
+    z-index: 1;
+}
+
+ul.social-icons li a::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, .1);
+}
+
+ul.social-icons li:nth-child(1) a::before {
+    background: #007de0;
+}
+
+ul.social-icons li:nth-child(2) a::before {
+    background: linear-gradient(to right top, rgb(253, 141, 50), rgb(163, 7, 186));
+    background-origin: border-box; /* fix inverted border colors on gradient */
+}
+
+ul.social-icons svg, ul.social-icons img {
+    z-index: 999;
+}
+
+/* END footer code END  */
