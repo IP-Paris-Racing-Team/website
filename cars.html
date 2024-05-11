@@ -18,6 +18,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Common CSS (footer) -->
     <link href="css/common.css" rel="stylesheet" />
+    <!-- Language script -->
+    <script src="js/language.js"></script>
 </head>
 
 <body id="page-top">
@@ -32,12 +34,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html#page-top">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cars.html">Nos Voitures</a></li>
-                    <li class="nav-item"><a class="nav-link" href="partners.html">Nos Partenaires</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Actualités</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#page-top" data-fr="Accueil"
+                            data-en="Home"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="presentation.html" data-fr="Présentation"
+                            data-en="Presentation"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="cars.html" data-fr="Nos Voitures"
+                            data-en="Our Cars"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html" data-fr="Nos Partenaires"
+                            data-en="Partners"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html" data-fr="Actualités" data-en="News"></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-fr="Contact"
+                            data-en="Contact"></a></li>
+                    <li class="nav-item nav-lang-select">
+                        <a class="nav-link" href="#" onclick="changeLanguage('fr')">Fr</a>|<a class="nav-link" href="#"
+                            onclick="changeLanguage('en')">En</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -54,15 +66,15 @@
 
     <!-- Intro-->
     <div class="text-center">
-        <h2 class="section-heading text-uppercase">Nos Voitures</h2>
+        <h2 class="section-heading text-uppercase" data-fr="Nos Voitures" data-en="Our Cars"></h2>
     </div>
-    <br>   <br>
+    <br> <br>
 
 
-            <div class="text-center">
-                <h4 class="section-heading text-uppercase">La première Formula Student électrique de l'IP Paris </h4>
-                <hr style="width:50%;text-align:left;margin-left:25%;height:3px;background-color:white;opacity: 1;">
-            </div>
+    <div class="text-center">
+        <h4 class="section-heading text-uppercase" data-fr="La première Formula Student électrique de l'IP Paris" data-en="IP Paris's first electrical Formula Student"></h4>
+        <hr style="width:50%;text-align:left;margin-left:25%;height:3px;background-color:white;opacity: 1;">
+    </div>
 
     <section class="page-section" id="team">
         <div class="container">
@@ -70,19 +82,30 @@
                 <!-- Left Box for Text -->
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="box-content">
-                        <p class="text-muted">Notre équipe, issue de cursus et d'écoles variés, partage
-                            des valeurs d'entraide, de perfectionnisme, mais aussi de sensibilité aux enjeux
-                            environnementaux.
-                            Ainsi, afin de promouvoir ces valeurs et de s'inscrire dans une perspective
-                            d'avenir, l'écurie concourra dans la catégorie électrique.</p>
-                        <p class="text-muted">Notre projet est voué à s'inscrire dans la durée. L'IP Paris Racing Team a
-                            pour but de s'imposer comme une référence
-                            française et faire rayonner l'excellence de ses écoles. Le travail effectué sur la première
-                            monoplace permettra aux
-                            promotions suivantes de reprendre l'écurie et d'améliorer ses
-                            performances d'année en année.</p>
-                            </div>
-                     </div>
+                        <p class="text-muted" data-fr="Notre équipe, issue de cursus et d'écoles variés, partage
+                        des valeurs d'entraide, de perfectionnisme, mais aussi de sensibilité aux enjeux
+                        environnementaux.
+                        Ainsi, afin de promouvoir ces valeurs et de s'inscrire dans une perspective
+                        d'avenir, l'écurie concourra dans la catégorie électrique." 
+                        data-en="Our team, drawn from a variety of backgrounds and schools, shares
+                        values of mutual aid, perfectionism and sensitivity to environmental
+                        environmental issues.
+                        So, in order to promote these values and look to the future
+                        future, the team will be competing in the electric category."></p>
+                        <p class="text-muted" data-fr="Notre projet est voué à s'inscrire dans la durée. L'IP Paris Racing Team a
+                        pour but de s'imposer comme une référence
+                        française et faire rayonner l'excellence de ses écoles. Le travail effectué sur la première
+                        monoplace permettra aux
+                        promotions suivantes de reprendre l'écurie et d'améliorer ses
+                        performances d'année en année."
+                        data-en="Our project is destined to be a long-term one. The IP Paris Racing Team aims
+                        to establish itself as a French benchmark
+                        the excellence of its schools. The work carried out on the first
+                        will enable subsequent
+                        to take over the team and improve its performance year after year.
+                        performance year on year."></p>
+                    </div>
+                </div>
 
 
                 <!-- Right Box for Image -->
@@ -94,13 +117,13 @@
     </section>
 
     <div class="text-center">
-        <h4 class="section-heading text-uppercase">Objectifs </h4>
+        <h4 class="section-heading text-uppercase" data-fr="Objectifs" data-en="Objectives"></h4>
         <hr style="width:50%;text-align:left;margin-left:25%;height:3px;background-color:white;opacity: 1;">
 
 
-        <h4 class = "my-3"> Une voiture de moins de 150kg </h4>
-        <h4 class="my-3">Première voiture à concourir en 2026</h4>
-        <h4 class="my-3">Prix du best newcomer</h4>
+        <h4 class="my-3" data-fr="Une voiture de moins de 150kg" data-en="A car weighting less than 150kg"></h4>
+        <h4 class="my-3" data-fr="Première voiture à concourir en 2026" data-en="First car to compete in 2026"></h4>
+        <h4 class="my-3" data-fr="Prix du best newcomer" data-en="Best newcomer award"></h4>
     </div>
 
     <style>
@@ -124,7 +147,7 @@
     <section class="page-section bg-light" id="about">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">La Timeline</h2>
+                <h2 class="section-heading text-uppercase" data-fr="La Timeline" data-en="The Timeline"></h2>
             </div>
             <ul class="timeline">
                 <li>
@@ -132,11 +155,13 @@
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Lancement du projet</h4>
+                            <h4 class="subheading" data-fr="Lancement du projet" data-en="Project launch"></h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Septembre 2022 : Création de l'association avec l'ambition de
-                                concourir en Formula Student</p>
+                            <p class="text-muted" data-fr="Septembre 2022 : Création de l'association avec l'ambition
+                             de concourir en Formula Student" 
+                            data-en="September 2022: Association founded with the ambition of
+                            competing in Formula Student"></p>
                         </div>
                     </div>
                 </li>
@@ -145,24 +170,29 @@
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Documentation et simulations</h4>
+                            <h4 class="subheading" data-fr="Documentation et simulations"
+                             data-en="Documentation and simulations"></h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Février 2023 : Conception du châssis, liaisons au sol, reflexions sur
-                                l'électronique, le powertrain et la batterie.</p>
+                            <p class="text-muted" data-fr="Février 2023 : Conception du châssis, liaisons au sol, reflexions sur
+                            l'électronique, le powertrain et la batterie." data-en="February 2023: Chassis design, ground connections, 
+                            electronics, powertrain and battery considerations."></p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/chassis.png"
-                            alt="..." /></div>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="assets/img/timeline/chassis.png" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Première version du châssis et achats de pièces</h4>
+                            <h4 class="subheading" data-fr="Première version du châssis et achats de pièces" 
+                            data-en="First version of the chassis and purchase of parts"></h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Mars 2024 : achat des cellules de batteries et cartes électroniques,
-                                acier pour production du châssis.</p>
+                            <p class="text-muted" data-fr="Mars 2024 : achat des cellules de batteries et cartes électroniques,
+                            acier pour production du châssis."
+                            data-en="March 2024: purchase of battery cells and electronic boards, 
+                            steel for chassis production."></p>
                         </div>
                     </div>
                 </li>
@@ -171,11 +201,12 @@
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Assemblement des pièces des pôles Chassis, Liaisons au sol et Moteur
+                            <h4 class="subheading" data-fr="Assemblement des pièces des pôles Chassis, Liaisons au sol et Moteur"
+                            data-en="Assembly of chassis, suspension and engine components">
                             </h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Décembre 2024</p>
+                            <p class="text-muted" data-fr="Décembre 2024" data-en="December 2024"></p>
                         </div>
                     </div>
                 </li>
@@ -184,10 +215,10 @@
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Ajout des pièces du pôle batterie</h4>
+                            <h4 class="subheading" data-fr="Ajout des pièces du pôle batterie" data-en="Adding battery divison parts"></h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Février 2025</p>
+                            <p class="text-muted" data-fr="Février 2025" data-en="February 2025"></p>
                         </div>
                     </div>
                 </li>
@@ -196,7 +227,8 @@
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Ajout de l'électronique basse et haute tensions</h4>
+                            <h4 class="subheading" data-fr="Ajout de l'électronique basse et haute tensions"
+                            data-en="Addition of low- and high-voltage electronics"></h4>
                         </div>
                         <div class="timeline-body">
                             <p class="text-muted">Mars 2025</p>
@@ -204,23 +236,22 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/UH_Racing_1-200_FSUK_2006.jpg"
-                            alt="..." /></div>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="assets/img/timeline/UH_Racing_1-200_FSUK_2006.jpg" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Finitions et production de la coque du châssis</h4>
+                            <h4 class="subheading" data-fr="Finitions et production de la coque du châssis" data-en="Frame shell finishing and production"></h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Octobre 2025</p>
+                            <p class="text-muted" data-fr="Octobre 2025" data-en="October 2025"></p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="timeline-image">
-                        <h4>
-                            Rejoignez
-                            <br />
-                            L'aventure !
+                        <h4 data-fr="Rejoignez
+                        L'aventure !" data-en="Join
+                        the adventure!">
                         </h4>
                     </div>
                 </li>
@@ -241,20 +272,19 @@
             <li>
                 <a href="https://www.instagram.com/ippracingteam/" target="_blank" rel="noopener noreferrer">
                     <img class="instagram" src="assets/img/logos/instagram.png" />
-                    <i class="fab fa-instagram" aria-label="Instagram""></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-                        <!-- Core theme JS-->
-                        <script src="js/scripts.js"></script>
-                        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-                        <!-- * *                               SB Forms JS                               * *-->
-                        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-                        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-                        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>

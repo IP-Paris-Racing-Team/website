@@ -19,6 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
     <!-- Common CSS (footer) -->
     <link href="css/common.css" rel="stylesheet" />
+    <!-- Language script -->
+    <script src="js/language.js"></script>
 </head>
 
 <body id="page-top">
@@ -33,12 +35,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html#page-top">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cars.html">Nos Voitures</a></li>
-                    <li class="nav-item"><a class="nav-link" href="partners.html">Nos Partenaires</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Actualités</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#page-top" data-fr="Accueil"
+                            data-en="Home"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="presentation.html" data-fr="Présentation"
+                            data-en="Presentation"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="cars.html" data-fr="Nos Voitures"
+                            data-en="Our Cars"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html" data-fr="Nos Partenaires"
+                            data-en="Partners"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html" data-fr="Actualités" data-en="News"></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-fr="Contact"
+                            data-en="Contact"></a></li>
+                    <li class="nav-item nav-lang-select">
+                        <a class="nav-link" href="#" onclick="changeLanguage('fr')">Fr</a>|<a class="nav-link" href="#"
+                            onclick="changeLanguage('en')">En</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -51,9 +63,11 @@
     <section class="page-section" id="team">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">L'équipe</h2>
-                <h3 class="section-subheading text-muted">Notre équipe, issue de cursus et d'écoles variées est divisée
-                    en 9 pôles</h3>
+                <h2 class="section-heading text-uppercase" data-fr="L'équipe" data-en="The Team">L'équipe</h2>
+                <h3 class="section-subheading text-muted"
+                    data-fr="Notre équipe, issue de cursus et d'écoles variées est divisée en 9 pôles"
+                    data-en="Our team, drawn from a wide range of backgrounds and schools, is divided into 9 divisions">
+                </h3>
             </div>
 
             <div class="container">
@@ -67,7 +81,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <h4>50</h4>
-                                    Membres
+                                    <p data-fr="Membres" data-en="Members"></p>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +94,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <h4>15</h4>
-                                    Nationalités
+                                    <p data-fr="Nationalités" data-en="Nationalities"></p>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +107,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <h4>5</h4>
-                                    Ecoles
+                                    <p data-fr="Ecoles" data-en="Schools"></p>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +136,7 @@
             <br><br>
 
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Les Pôles</h2>
+                <h2 class="section-heading text-uppercase" data-fr="Les Pôles" data-en="The Divisions"></h2>
             </div>
             <br><br>
 
@@ -131,10 +145,13 @@
                     <span class="">
                         <div class="center-cropped" style="background-image: url(assets/img/bureau.jpeg);"></div>
                     </span>
-                    <h4 class="my-3">BUREAU</h4>
-                    <p class="text-muted"> Le bureau, composé d'un président, vice président, d'un directeur technique
-                        et d'un trésorier, s'occupe de la gestion administrative du projet et de la bonne communication
-                        entre l'administratif et le technique ainsi qu'entre les différents pôles. </p>
+                    <h4 class="my-3" data-fr="BUREAU" data-en="BOARD"></h4>
+                    <p class="text-muted" data-fr="Le bureau, composé d'un président, vice président, d'un directeur technique
+                    et d'un trésorier, s'occupe de la gestion administrative du projet et de la bonne communication
+                    entre l'administratif et le technique ainsi qu'entre les différents pôles." data-en="The board, comprising a chairman, vice-chairman, technical director and treasurer,
+                    is responsible for the administrative management of the project and for ensuring effective communication
+                    between the administrative and technical departments, as well as between the various divisions.
+                    "></p>
                 </div>
             </div>
 
@@ -143,18 +160,21 @@
                     <span class="">
                         <div class="center-cropped" style="background-image: url(assets/img/ChassisImg.png);"></div>
                     </span>
-                    <h4 class="my-3">CHÂSSIS</h4>
-                    <p class="text-muted"> Le pôle châssis s'occupe de la modélisation, simulation et de la conception
-                        du châssis du monoplace.</p>
+                    <h4 class="my-3" data-fr="CHÂSSIS" data-en="FRAME"></h4>
+                    <p class="text-muted" data-fr="Le pôle châssis s'occupe de la modélisation, simulation et de la conception
+                    du châssis du monoplace." data-en="The chassis division is responsible for modeling, simulation and design
+                    of the single-seater chassis."></p>
                 </div>
                 <div class="col-md-6">
                     <span class="">
                         <div class="center-cropped" style="background-image: url(assets/img/Suspension.png);"></div>
                     </span>
                     <h4 class="my-3">LAS</h4>
-                    <p class="text-muted">Le pôle liaison au sol travaille sur la conception et la fabrication des
+                    <p class="text-muted" data-fr="Le pôle liaison au sol travaille sur la conception et la fabrication des
                         systèmes de suspension, direction, freinage de la voiture et s'assure d'optimiser le contact des
-                        roues avec le sol. </p>
+                        roues avec le sol." data-en="The ground linkage division (liaison au sol) designs and manufactures the car's suspension,
+                        steering and braking systems, ensuring optimum contact between the wheels and the ground.">
+                    </p>
                 </div>
             </div>
 
@@ -163,18 +183,24 @@
                     <span class="">
                         <div class="center-cropped" style="background-image: url(assets/img/Battery.png);"></div>
                     </span>
-                    <h4 class="my-3">BATTERIE & POWERTRAIN </h4>
-                    <p class="text-muted">L'équipe batterie & powertrain est en charge du développement de la batterie de la voiture,
-                        ainsi que de l'ensemble de l'électronique haute tension, en plus du choix et de l'implémentation du moteur ainsi
-                        que tout le système de propulsion du monoplace </p>
+                    <h4 class="my-3" data-fr="BATTERIE & POWERTRAIN" data-en="BATTERY & POWERTRAIN"></h4>
+                    <p class="text-muted" data-fr="L'équipe batterie & powertrain est en charge du développement de la batterie
+                        de la voiture,
+                        ainsi que de l'ensemble de l'électronique haute tension, en plus du choix et de l'implémentation
+                        du moteur ainsi
+                        que tout le système de propulsion du monoplace"
+                        data-en="The battery & powertrain team is in charge of developing the car's battery,
+                         as well as all the high-voltage electronics,
+                         in addition to choosing and implementing the motor and the single-seater's entire propulsion system."> </p>
                 </div>
                 <div class="col-md-6">
                     <span class="">
                         <div class="center-cropped" style="background-image: url(assets/img/CAN.png);"></div>
                     </span>
-                    <h4 class="my-3">ELECTRONIQUE</h4>
-                    <p class="text-muted">L'équipe électronique est en charge de tout ce qui concerne le low-voltage :
-                        communication entre les capteurs, bus CAN, tableaux de bords.</p>
+                    <h4 class="my-3" data-fr="ELECTRONIQUE" data-en="ELECTRONICS"></h4>
+                    <p class="text-muted" data-fr="L'équipe électronique est en charge de tout ce qui concerne le low-voltage :
+                    communication entre les capteurs, bus CAN, tableaux de bords." data-en="The electronics team is in charge of 
+                    everything to do with low-voltage: communication between sensors, CAN bus, instrument panels."></p>
                 </div>
             </div>
 
@@ -184,29 +210,33 @@
                         <div class="center-cropped" style="background-image: url(assets/img/aero.png);"></div>
                     </span>
                     <h4 class="my-3">AERO</h4>
-                    <p class="text-muted">L'équipe aéro a pour objectif de d'optimiser l'aérodynamisme de la voiture
-                        pour maximiser les performances de celle-ci.</p>
+                    <p class="text-muted" data-fr="L'équipe aéro a pour objectif de d'optimiser l'aérodynamisme de la voiture
+                    pour maximiser les performances de celle-ci."
+                        data-en="The aerodynamics team optimizes the car's aerodynamics to maximize performance."></p>
                 </div>
             </div>
 
             <br><br>
 
             <div class="text-center">
-                <h3 class="section-heading text-uppercase">Pôles Support </h3>
+                <h3 class="section-heading text-uppercase" data-fr="Pôles Support" data-en="SUPPORT"></h3>
                 <hr style="width:50%;text-align:left;margin-left:25%;height:3px;background-color:white;opacity: 1;">
             </div>
 
-            
+
             <div class="row text-center">
                 <div class="col-md-6">
                     <h4 class="my-3">COMMUNICATION</h4>
-                    <p class="text-muted">L'équipe communication maintient et développe les réseaux sociaux et le site
-                        de l'association et permet de faire découvrir l'association et ses évolutions aux public.</p>
+                    <p class="text-muted" data-fr="L'équipe communication maintient et développe les réseaux sociaux et le site
+                        de l'association et permet de faire découvrir l'association et ses évolutions aux public."
+                        data-en="The communications team maintains and develops the association's social networks and website, and helps the public discover the association and its developments.">
+                    </p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="my-3">SPONSORS</h4>
-                    <p class="text-muted"> Le pôle sponsors permet de mettre l'association en communication avec les
-                        entreprises, pour créer des collaborations, des partenariats financiers et matériels.</p>
+                    <p class="text-muted" data-fr="pôle sponsors permet de mettre l'association en communication avec les
+                        entreprises, pour créer des collaborations, des partenariats financiers et matériels." data-en="The sponsors' team puts the association in touch with companies, to create collaborations 
+                        and financial and material partnerships."></p>
                 </div>
             </div>
     </section>
@@ -224,111 +254,110 @@
             <li>
                 <a href="https://www.instagram.com/ippracingteam/" target="_blank" rel="noopener noreferrer">
                     <img class="instagram" src="assets/img/logos/instagram.png" />
-                    <i class="fab fa-instagram" aria-label="Instagram""></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        
-        <!-- Bootstrap core JS-->
-        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-                        <!-- Core theme JS-->
-                        <script src="js/scripts.js"></script>
-                        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-                        <!-- * *                               SB Forms JS                               * *-->
-                        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-                        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-                        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
-                        <script>
-                            // Get the canvas element
-                            var ch1 = document.getElementById('members_chart').getContext('2d');
-                            var ch2 = document.getElementById('nation_chart').getContext('2d');
-                            var ch3 = document.getElementById('school_chart').getContext('2d');
+    <!-- Bootstrap core JS-->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-                            const generateGradientColors = (numColors) => {
-                                const colors = [];
-                                for (let i = 0; i < numColors; i++) {
-                                    const r = 255 - i * 255 / numColors; // Gradually decrease red component
-                                    const g = 10 + i * 100 / numColors;   // Gradually increase green component
-                                    const b = 10 + i * 245 / numColors;          // Constant blue component
-                                    colors.push(`rgb(${r},${g},${b})`);
-                                }
-                                return colors;
-                            };
+    <script>
+        // Get the canvas element
+        var ch1 = document.getElementById('members_chart').getContext('2d');
+        var ch2 = document.getElementById('nation_chart').getContext('2d');
+        var ch3 = document.getElementById('school_chart').getContext('2d');
 
-                            const gradientColors1 = generateGradientColors(11);
+        const generateGradientColors = (numColors) => {
+            const colors = [];
+            for (let i = 0; i < numColors; i++) {
+                const r = 255 - i * 255 / numColors; // Gradually decrease red component
+                const g = 10 + i * 100 / numColors;   // Gradually increase green component
+                const b = 10 + i * 245 / numColors;          // Constant blue component
+                colors.push(`rgb(${r},${g},${b})`);
+            }
+            return colors;
+        };
+
+        const gradientColors1 = generateGradientColors(11);
 
 
-                            // Define your data for the pie chart
-                            var data1 = {
-                                labels: ['Châssis', 'Motorisation', 'Electronique', 'Driverless', 'Aérodynamique', 'Communication', 'Liaison au sol', 'Sponsors', 'Batterie', 'Bureau', 'Logistique'],
-                                datasets: [{
-                                    data: [10, 10, 10, 10, 8, 8, 9, 6, 8, 11, 2], // Example data
-                                    backgroundColor: generateGradientColors(11), // Colors for segments
-                                    borderWidth: 0.5,
-                                    borderColor: 'black',
-                                }]
-                            };
+        // Define your data for the pie chart
+        var data1 = {
+            labels: ['Châssis', 'Motorisation', 'Electronique', 'Driverless', 'Aérodynamique', 'Communication', 'Liaison au sol', 'Sponsors', 'Batterie', 'Bureau', 'Logistique'],
+            datasets: [{
+                data: [10, 10, 10, 10, 8, 8, 9, 6, 8, 11, 2], // Example data
+                backgroundColor: generateGradientColors(11), // Colors for segments
+                borderWidth: 0.5,
+                borderColor: 'black',
+            }]
+        };
 
-                            var data2 = {
-                                labels: ['Master', 'Cycle Ingénieur', 'Licence / Bachelor'],
-                                datasets: [{
-                                    data: [50, 31, 11], // Example data
-                                    backgroundColor: generateGradientColors(3), // Colors for segments
-                                    borderWidth: 0.5,
-                                    borderColor: 'black',
-                                }]
-                            };
+        var data2 = {
+            labels: ['Master', 'Cycle Ingénieur', 'Licence / Bachelor'],
+            datasets: [{
+                data: [50, 31, 11], // Example data
+                backgroundColor: generateGradientColors(3), // Colors for segments
+                borderWidth: 0.5,
+                borderColor: 'black',
+            }]
+        };
 
-                            var data3 = {
-                                labels: ['Ecole Polytechnique', 'ENSTA Paris', 'Telecom Sud Paris', 'Telecom Paris', 'ENSAE'],
-                                datasets: [{
-                                    data: [60, 13, 9, 6, 4], // Example data
-                                    backgroundColor: generateGradientColors(5), // Colors for segments
-                                    borderWidth: 0.5,
-                                    borderColor: 'black',
-                                }]
-                            };
+        var data3 = {
+            labels: ['Ecole Polytechnique', 'ENSTA Paris', 'Telecom Sud Paris', 'Telecom Paris', 'ENSAE'],
+            datasets: [{
+                data: [60, 13, 9, 6, 4], // Example data
+                backgroundColor: generateGradientColors(5), // Colors for segments
+                borderWidth: 0.5,
+                borderColor: 'black',
+            }]
+        };
 
-                            // Configure options for the pie chart (e.g., tooltips, legend, etc.)
-                            var options1 = {
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: { legend: { display: true, position: 'bottom', position: 'left', labels: { color: 'white', }, } }
-                            };
+        // Configure options for the pie chart (e.g., tooltips, legend, etc.)
+        var options1 = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: true, position: 'bottom', position: 'left', labels: { color: 'white', }, } }
+        };
 
-                            var options2 = {
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: { legend: { display: true, position: 'bottom', position: 'top', labels: { color: 'white', }, } }
-                            };
+        var options2 = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: true, position: 'bottom', position: 'top', labels: { color: 'white', }, } }
+        };
 
-                            var options3 = {
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: { legend: { display: true, position: 'bottom', position: 'right', labels: { color: 'white', }, } }
-                            };
+        var options3 = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: true, position: 'bottom', position: 'right', labels: { color: 'white', }, } }
+        };
 
-                            // Create the pie chart
-                            var pie1 = new Chart(ch1, {
-                                type: 'doughnut',
-                                data: data1,
-                                options: options1
-                            });
+        // Create the pie chart
+        var pie1 = new Chart(ch1, {
+            type: 'doughnut',
+            data: data1,
+            options: options1
+        });
 
-                            var pie2 = new Chart(ch2, {
-                                type: 'doughnut',
-                                data: data2,
-                                options: options2
-                            });
+        var pie2 = new Chart(ch2, {
+            type: 'doughnut',
+            data: data2,
+            options: options2
+        });
 
-                            var pie3 = new Chart(ch3, {
-                                type: 'doughnut',
-                                data: data3,
-                                options: options3
-                            });
-                        </script>
+        var pie3 = new Chart(ch3, {
+            type: 'doughnut',
+            data: data3,
+            options: options3
+        });
+    </script>
 
 </body>
 
