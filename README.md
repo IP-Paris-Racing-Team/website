@@ -4,7 +4,7 @@ All
 
 - [x] Coloring the linkedin & instagram buttons at the bottom with adapted colors
 - [x] The instagram and linkedin redirect to our own pages and not the generic websites
-- [ ] English version of the website possibility
+- [x] English version of the website possibility
 
 Accueil/Index
 
@@ -25,7 +25,7 @@ Partenaires
 - [x] Downloadable sponsors plaquette when button clicked on the "Partenaires page"
 - [ ] Prettifying the clickable button background
 - [x] Add Kvaser logo
-- [x] Adding small texts on the side of the sponsors logos (WIP, Ayoub)
+- [x] Adding small texts on the side of the sponsors logos
 
 Actualités
 
