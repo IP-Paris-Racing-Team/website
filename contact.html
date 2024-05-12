@@ -18,6 +18,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Common CSS (footer) -->
     <link href="css/common.css" rel="stylesheet" />
+    <!-- Language script -->
+    <script src="js/language.js"></script>
 </head>
 
 <body id="page-top">
@@ -32,12 +34,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html#page-top">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cars.html">Nos Voitures</a></li>
-                    <li class="nav-item"><a class="nav-link" href="partners.html">Nos Partenaires</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Actualités</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#page-top" data-fr="Accueil"
+                            data-en="Home"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="presentation.html" data-fr="Présentation"
+                            data-en="Presentation"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="cars.html" data-fr="Nos Voitures"
+                            data-en="Our Cars"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html" data-fr="Nos Partenaires"
+                            data-en="Partners"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html" data-fr="Actualités" data-en="News"></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-fr="Contact"
+                            data-en="Contact"></a></li>
+                    <li class="nav-item nav-lang-select">
+                        <a class="nav-link" href="#" onclick="changeLanguage('fr')">Fr</a>|<a class="nav-link" href="#"
+                            onclick="changeLanguage('en')">En</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -48,9 +60,9 @@
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Nous Contacter</h2>
-                <h3 class="section-subheading text-muted">N'hésitez pas à nous contacter pour toutes demandes de
-                    renseignements.</h3>
+                <h2 class="section-heading text-uppercase" data-fr="Nous Contacter" data-en="Contact us"></h2>
+                <h3 class="section-subheading text-muted" data-fr="N'hésitez pas à nous contacter pour toutes demandes de renseignements." 
+                data-en="Please do not hesitate to contact us if you have any questions."></h3>
             </div>
             <form id="contactForm" action="https://formspree.io/f/mrgnlqpq" method="POST">
                 <div class="row align-items-stretch mb-5">
@@ -81,7 +93,7 @@
                 </div>
                 <!-- Submit Button-->
                 <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton"
-                        type="submit">Send Message</button></div>
+                        type="submit" data-fr="Envoyer" data-en="Send Message"></button></div>
             </form>
         </div>
     </section>
@@ -98,15 +110,14 @@
             <li>
                 <a href="https://www.instagram.com/ippracingteam/" target="_blank" rel="noopener noreferrer">
                     <img class="instagram" src="assets/img/logos/instagram.png" />
-                    <i class="fab fa-instagram" aria-label="Instagram""></i>
                 </a>
             </li>
         </ul>
     </footer>
     <!-- Bootstrap core JS-->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-                        <!-- Core theme JS-->
-                        <script src="js/scripts.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
